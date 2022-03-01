@@ -59,6 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 //   },
                 //   child: Text("Login"),),
                 InkWell(
+                  splashColor: Colors.red,
                   onTap: () async {
                     setState(() {
                      changeButton = true;
@@ -67,11 +68,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
 
                   },
-                  child: AnimatedContainer(
-                    duration: Duration(seconds: 2),
+                  child: Ink(
+                    //duration: Duration(seconds: 2),
                     width: changeButton? 50 :150,
                     height:  50,
-                    alignment: Alignment.center,
+                   // alignment: Alignment.center,
                      
                     child:
                     changeButton? Icon(Icons.done,

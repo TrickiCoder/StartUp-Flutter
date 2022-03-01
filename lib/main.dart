@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/LoginScreen.dart';
+import 'package:login/my_goals_login.dart';
 import 'package:login/utils/routes.dart';
 void main(){
   runApp(HomePage());
@@ -18,7 +19,7 @@ class _LoginScreenState extends State<HomePage> {
     ),
       initialRoute: "/",
           routes:{
-        "/": (context) => LoginScreen()
+        "/": (context) => MyGoals()
 ,
 
     },
