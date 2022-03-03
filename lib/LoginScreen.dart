@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     labelText: 'Username'
                   ),
                   onChanged: (value){
-                    name = value;
+                    name = value;           //to show text upper side with welcome
                     setState(() {});
                   },
                 ),
@@ -58,38 +58,41 @@ class _LoginScreenState extends State<LoginScreen> {
                 //     Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
                 //   },
                 //   child: Text("Login"),),
-                InkWell(
-                  splashColor: Colors.red,
-                  onTap: () async {
-                    setState(() {
-                     changeButton = true;
-                    });
-                    await Future.delayed(Duration(seconds: 1));
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
-
-                  },
-                  child: Ink(
-                    //duration: Duration(seconds: 2),
-                    width: changeButton? 50 :150,
-                    height:  50,
-                   // alignment: Alignment.center,
-                     
-                    child:
-                    changeButton? Icon(Icons.done,
-                    color: Colors.white,)
-
-                        : Text('Login',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                      color: Colors.white
-                    ),),
-                    decoration: BoxDecoration(
+                Material(
                       color: Colors.deepPurple,
-                      borderRadius: BorderRadius.circular(8)
+                      borderRadius: BorderRadius.circular(changeButton?50:8),
+                  child: InkWell(
+                    onTap: () async {
+                      setState(() {
+                       changeButton = true;
+                      });
+                      await Future.delayed(Duration(seconds: 1));
+                      await Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                      setState(() {
+                        changeButton = false;
+                      });
+                    },
+                    child: AnimatedContainer(
+
+                      duration: Duration(seconds: 2),
+                      width: changeButton? 50 :150,
+                      height:  50,
+                     alignment: Alignment.center,
+
+                      child:
+                      changeButton? Icon(Icons.done,
+                      color: Colors.white,)
+
+                          : Text('Login',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.white
+                      ),),
+                      ),
                     ),
                   ),
-                )
+
               ],
             ),
           )

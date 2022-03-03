@@ -15,11 +15,11 @@ class _LoginScreenState extends State<HomePage> {
     return MaterialApp(
         themeMode: ThemeMode.light
         ,theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.grey,
     ),
       initialRoute: "/",
           routes:{
-        "/": (context) => MyGoals()
+        "/": (context) => LoginScreen()
 ,
 
     },
