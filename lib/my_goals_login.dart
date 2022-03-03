@@ -20,7 +20,7 @@ class MyGoals extends StatelessWidget {
             child: Container(
               alignment: Alignment.center,
               child: Container(
-                height:,
+                height:20,
                 child: Row(
                   children: [
                     Text('my'),
