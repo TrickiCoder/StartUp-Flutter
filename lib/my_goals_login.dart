@@ -76,7 +76,10 @@ class MyGoals extends StatelessWidget {
                   hintText: "Password",hintStyle: TextStyle(color: Colors.grey,fontSize: 14),
                   labelText: "Password",labelStyle: TextStyle(color: Colors.white,fontSize: 14),
 
-                ),),
+                ),
+                validator: (value){
+
+                },),
                   ],
                 ),
               ),
