@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
       changeButton = true;
     });
     await Future.delayed(Duration(seconds: 1));
-    await Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+    await Navigator.push(context, MaterialPageRoute(builder: (context) => HomeePage()));
     setState(() {
       changeButton = false;
     });

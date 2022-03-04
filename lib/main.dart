@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login/LoginScreen.dart';
+import 'package:login/home_page.dart';
 import 'package:login/my_goals_login.dart';
+import 'package:login/widgets/themes.dart';
 import 'package:login/utils/routes.dart';
 void main(){
   runApp(HomePage());
@@ -13,13 +15,15 @@ class _LoginScreenState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        themeMode: ThemeMode.light
-        ,theme: ThemeData(
+        themeMode: ThemeMode.light ,
+      theme: MyTheme.lightTheme(context),
+      darkTheme: ThemeData(
         primarySwatch: Colors.grey,
     ),
+      debugShowCheckedModeBanner: false,
       initialRoute: "/",
           routes:{
-        "/": (context) => LoginScreen()
+        "/": (context) => HomeePage()
 ,
 
     },
