@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:login/LoginScreen.dart';
-import 'package:login/home_page.dart';
-import 'package:login/my_goals_login.dart';
+import 'package:login/goals.dart';
 import 'package:login/widgets/themes.dart';
-import 'package:login/utils/routes.dart';
 void main(){
   runApp(HomePage());
 }
@@ -23,7 +20,7 @@ class _LoginScreenState extends State<HomePage> {
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
           routes:{
-        "/": (context) => HomeePage()
+        "/": (context) => Goals()
 ,
 
     },
