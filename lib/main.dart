@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login/goals.dart';
+import 'package:login/progress_bar.dart';
 import 'package:login/widgets/themes.dart';
 void main(){
   runApp(HomePage());
@@ -20,7 +21,7 @@ class _LoginScreenState extends State<HomePage> {
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
           routes:{
-        "/": (context) => Goals()
+        "/": (context) => ProgressBar()
 ,
 
     },
