@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/BusLoacation.dart';
 import 'package:login/Donate.dart';
 import 'package:login/SearchFilters.dart';
 import 'package:login/component/NewLogin.dart';
@@ -26,7 +27,7 @@ class _LoginScreenState extends State<HomePage> {
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
           routes:{
-        "/": (context) => NewLogin()
+        "/": (context) => BusLocation()
 
 ,},
 

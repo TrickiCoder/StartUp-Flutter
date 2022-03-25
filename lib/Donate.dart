@@ -1,11 +1,12 @@
-import 'dart:io';
+
 
 import 'package:flutter/material.dart';
+
 
 import 'component/color.dart';
 
 class Donate extends StatefulWidget {
-  const Donate({Key? key}) : super(key: key);
+
 
   @override
   State<Donate> createState() => _DonateState();
@@ -14,8 +15,14 @@ class Donate extends StatefulWidget {
 class _DonateState extends State<Donate> {
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery
+        .of(context)
+        .size
+        .height;
+    double width = MediaQuery
+        .of(context)
+        .size
+        .width;
     return MaterialApp(
       home: Scaffold(
           backgroundColor: AppColor.grey,
@@ -86,10 +93,14 @@ class _DonateState extends State<Donate> {
                             Container(
                               height: height * 0.04,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(height*0.005),
+                                borderRadius: BorderRadius.circular(
+                                    height * 0.005),
                                 color: AppColor.peach,
                               ),
-                              child: Icon(Icons.camera_alt_outlined
+                              child: MaterialButton(
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
                                 child: Text(
                                   "OK",
                                   style: TextStyle(
@@ -104,7 +115,6 @@ class _DonateState extends State<Donate> {
                         );
                       },
                     );
-
                   },
                   child: Container(
                       margin: EdgeInsets.only(top: 35),
@@ -203,7 +213,5 @@ class _DonateState extends State<Donate> {
             ),
           )),
     );
-  }
+  }}
 
-  void showAlertDialog(BuildContext context) {}
-}
