@@ -61,78 +61,167 @@ class BusLocation extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(top: 250, left: 30),
-              height: 200,
-              width: 330,
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(30)),
-              child: Column(
-                children: [
-                  Row(
+            Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(top: 250, left: 30),
+                  height: 170,
+                  width: 330,
+                  decoration: BoxDecoration(
+                      color: Colors.white, borderRadius: BorderRadius.circular(30)),
+                  child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 20, top: 35),
-                        child: Image.asset(
-                          'assets/images/send.png',
-                          height: 35,
-                          width: 35,
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.only(left: 20, top: 35),
+                                  child: Image.asset(
+                                    'assets/images/send.png',
+                                    height: 30,
+                                    width: 35,
+                                  ),
+                                ),
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                            margin: EdgeInsets.only(top: 20,right: 40 ),
+                                            child: Text('FROM',
+                                                style: TextStyle(
+                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                      ],
+                                    ),
+                                    Container(
+                                        margin: EdgeInsets.only(left: 15),
+                                        child: Text('Location 1',
+                                            style: TextStyle(
+                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                    margin: EdgeInsets.only(left: 20, top: 20),
+                                    child: Image.asset(
+                                      'assets/images/Location.png',
+                                      height: 30,
+                                      width: 40,
+                                    )),
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(margin: EdgeInsets.only(right: 60,top: 15),
+                                           // margin: EdgeInsets.only(right:50 ),
+                                            child: Text('TO',
+                                                style: TextStyle(
+                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                      ],
+                                    ),
+                                    Container(
+                                        margin: EdgeInsets.only(left:10,),
+                                        child: Text('Location 2',
+                                            style: TextStyle(
+                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
+                                  ],
+                                ),
+                              ],
+                            ),
+
+                          ],
                         ),
                       ),
-                      Column(
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                  margin: EdgeInsets.only(top: 20,right: 37 ),
-                                  child: Text('FROM',
-                                      style: TextStyle(
-                                          fontSize: 13, color: Colors.grey,fontWeight: FontWeight.bold))),
-                            ],
-                          ),
-                          Container(
-                              margin: EdgeInsets.only(left: 20),
-                              child: Text('Location 1',
-                                  style: TextStyle(
-                                      fontSize: 20, color: AppColor.purple,fontWeight: FontWeight.bold))),
-                        ],
-                      ),
+                      Container(padding: EdgeInsets.only(left: 50),child: Image.asset('assets/images/updown.png',height: 50,)),
                     ],
                   ),
-                  Row(
+                ),
+                Container(
+                  margin: EdgeInsets.only(top:25, left: 30),
+                  height: 170,
+                  width: 330,
+                  decoration: BoxDecoration(
+                      color: Colors.white, borderRadius: BorderRadius.circular(30)),
+                  child: Row(
                     children: [
                       Container(
-                          margin: EdgeInsets.only(left: 20, top: 45),
-                          child: Image.asset(
-                            'assets/images/Location.png',
-                            height: 40,
-                            width: 40,
-                          )),
-                      Column(
-                        children: [
-                          Row(
-                            children: [
-                              Container(margin: EdgeInsets.only(right: 60,top: 40),
-                                 // margin: EdgeInsets.only(right:50 ),
-                                  child: Text('TO',
-                                      style: TextStyle(
-                                          fontSize: 13, color: Colors.grey,fontWeight: FontWeight.bold))),
-                            ],
-                          ),
-                          Container(
-                              margin: EdgeInsets.only(left: 20,),
-                              child: Text('Location 2',
-                                  style: TextStyle(
-                                      fontSize: 20, color: AppColor.purple,fontWeight: FontWeight.bold))),
-                        ],
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.only(left: 20, top: 35),
+                                  child: Image.asset(
+                                    'assets/images/send.png',
+                                    height: 30,
+                                    width: 35,
+                                  ),
+                                ),
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                            margin: EdgeInsets.only(top: 20,right: 40 ),
+                                            child: Text('FROM',
+                                                style: TextStyle(
+                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                      ],
+                                    ),
+                                    Container(
+                                        margin: EdgeInsets.only(left: 15),
+                                        child: Text('Location 1',
+                                            style: TextStyle(
+                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                    margin: EdgeInsets.only(left: 20, top: 20),
+                                    child: Image.asset(
+                                      'assets/images/Location.png',
+                                      height: 30,
+                                      width: 40,
+                                    )),
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(margin: EdgeInsets.only(right: 60,top: 15),
+                                            // margin: EdgeInsets.only(right:50 ),
+                                            child: Text('TO',
+                                                style: TextStyle(
+                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                      ],
+                                    ),
+                                    Container(
+                                        margin: EdgeInsets.only(left:10,),
+                                        child: Text('Location 2',
+                                            style: TextStyle(
+                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
+                                  ],
+                                ),
+                              ],
+                            ),
+
+                          ],
+                        ),
                       ),
+                      Container(padding: EdgeInsets.only(left: 50),child: Image.asset('assets/images/updown.png',height: 50,)),
                     ],
                   ),
-
-
-
-                ],
-              ),
+                ),
+              ],
             ),
           ],
         ),
