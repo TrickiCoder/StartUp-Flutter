@@ -8,6 +8,22 @@ class BusLocation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_rounded),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.access_time,color: Colors.grey,),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person,color: Colors.grey,),
+            label: "",
+          ),
+        ],
+      ),
       backgroundColor: AppColor.grey,
       body: Column(children: [
         Stack(
@@ -68,7 +84,8 @@ class BusLocation extends StatelessWidget {
                   height: 170,
                   width: 330,
                   decoration: BoxDecoration(
-                      color: Colors.white, borderRadius: BorderRadius.circular(30)),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30)),
                   child: Row(
                     children: [
                       Container(
@@ -90,17 +107,23 @@ class BusLocation extends StatelessWidget {
                                     Row(
                                       children: [
                                         Container(
-                                            margin: EdgeInsets.only(top: 20,right: 40 ),
+                                            margin: EdgeInsets.only(
+                                                top: 20, right: 40),
                                             child: Text('FROM',
                                                 style: TextStyle(
-                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                                    fontSize: 10,
+                                                    color: Colors.grey,
+                                                    fontWeight:
+                                                        FontWeight.bold))),
                                       ],
                                     ),
                                     Container(
                                         margin: EdgeInsets.only(left: 15),
                                         child: Text('Location 1',
                                             style: TextStyle(
-                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
+                                                fontSize: 17,
+                                                color: Colors.blueGrey[900],
+                                                fontWeight: FontWeight.bold))),
                                   ],
                                 ),
                               ],
@@ -118,36 +141,50 @@ class BusLocation extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Container(margin: EdgeInsets.only(right: 60,top: 15),
-                                           // margin: EdgeInsets.only(right:50 ),
+                                        Container(
+                                            margin: EdgeInsets.only(
+                                                right: 60, top: 15),
+                                            // margin: EdgeInsets.only(right:50 ),
                                             child: Text('TO',
                                                 style: TextStyle(
-                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                                    fontSize: 10,
+                                                    color: Colors.grey,
+                                                    fontWeight:
+                                                        FontWeight.bold))),
                                       ],
                                     ),
                                     Container(
-                                        margin: EdgeInsets.only(left:10,),
+                                        margin: EdgeInsets.only(
+                                          left: 10,
+                                        ),
                                         child: Text('Location 2',
                                             style: TextStyle(
-                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
+                                                fontSize: 17,
+                                                color: Colors.blueGrey[900],
+                                                fontWeight: FontWeight.bold))),
                                   ],
                                 ),
                               ],
                             ),
-
                           ],
                         ),
                       ),
-                      Container(padding: EdgeInsets.only(left: 50),child: Image.asset('assets/images/updown.png',height: 50,)),
+                      Container(
+                          padding: EdgeInsets.only(left: 50),
+                          child: Image.asset(
+                            'assets/images/updown.png',
+                            height: 50,
+                          )),
                     ],
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top:25, left: 30),
+                  margin: EdgeInsets.only(top: 25, left: 30),
                   height: 170,
                   width: 330,
                   decoration: BoxDecoration(
-                      color: Colors.white, borderRadius: BorderRadius.circular(30)),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30)),
                   child: Row(
                     children: [
                       Container(
@@ -159,27 +196,43 @@ class BusLocation extends StatelessWidget {
                                 Container(
                                   margin: EdgeInsets.only(left: 20, top: 35),
                                   child: Image.asset(
-                                    'assets/images/send.png',
+                                    'assets/images/simplegreen.png',
                                     height: 30,
                                     width: 35,
                                   ),
                                 ),
                                 Column(
                                   children: [
+                                    Container(
+                                        margin: EdgeInsets.only(
+                                            top: 10,
+                                            right: 30,
+                                            left: 10,
+                                            bottom: 5),
+                                        child: Text('PASSENGER',
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.grey,
+                                                fontWeight: FontWeight.bold))),
                                     Row(
                                       children: [
+                                        Image.asset(
+                                          'assets/images/minus.png',
+                                          height: 12,
+                                        ),
+                                        SizedBox(width: 7),
+                                        Text('01'),
+                                        SizedBox(
+                                          width: 7,
+                                        ),
                                         Container(
-                                            margin: EdgeInsets.only(top: 20,right: 40 ),
-                                            child: Text('FROM',
-                                                style: TextStyle(
-                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                            margin: EdgeInsets.only(right: 20),
+                                            child: Image.asset(
+                                              'assets/images/plus.png',
+                                              height: 12,
+                                            ))
                                       ],
                                     ),
-                                    Container(
-                                        margin: EdgeInsets.only(left: 15),
-                                        child: Text('Location 1',
-                                            style: TextStyle(
-                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
                                   ],
                                 ),
                               ],
@@ -189,7 +242,7 @@ class BusLocation extends StatelessWidget {
                                 Container(
                                     margin: EdgeInsets.only(left: 20, top: 20),
                                     child: Image.asset(
-                                      'assets/images/Location.png',
+                                      'assets/images/simplepurple.png',
                                       height: 30,
                                       width: 40,
                                     )),
@@ -197,30 +250,64 @@ class BusLocation extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Container(margin: EdgeInsets.only(right: 60,top: 15),
+                                        Container(
+                                            margin: EdgeInsets.only(
+                                                right: 65, top: 15),
                                             // margin: EdgeInsets.only(right:50 ),
-                                            child: Text('TO',
+                                            child: Text('DEPART',
                                                 style: TextStyle(
-                                                    fontSize: 10, color: Colors.grey,fontWeight: FontWeight.bold))),
+                                                    fontSize: 10,
+                                                    color: Colors.grey,
+                                                    fontWeight:
+                                                        FontWeight.bold))),
                                       ],
                                     ),
                                     Container(
-                                        margin: EdgeInsets.only(left:10,),
-                                        child: Text('Location 2',
+                                        margin: EdgeInsets.only(
+                                          left: 10,
+                                        ),
+                                        child: Text('Sun 3 Jun 2021',
                                             style: TextStyle(
-                                                fontSize: 17, color: Colors.blueGrey[900],fontWeight: FontWeight.bold))),
+                                                fontSize: 16,
+                                                color: Colors.deepPurple,
+                                                fontWeight: FontWeight.w600))),
                                   ],
                                 ),
                               ],
                             ),
-
                           ],
                         ),
                       ),
-                      Container(padding: EdgeInsets.only(left: 50),child: Image.asset('assets/images/updown.png',height: 50,)),
+                      Column(
+                        children: [
+                          Container(
+                              padding: EdgeInsets.only(top: 30, left: 12),
+                              child: Text('TYPE',
+                                  style: TextStyle(
+                                      color: Colors.grey,
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.bold))),
+                          Container(
+                              margin: EdgeInsets.only(left: 20, top: 3),
+                              child: Text(
+                                'TYPE',
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.deepPurple,
+                                    fontWeight: FontWeight.w500),
+                              )),
+                        ],
+                      ),
                     ],
                   ),
                 ),
+                Container(
+                  margin: EdgeInsets.only(top: 20,left: 20),
+                  height: 60,
+                  width: 230,
+                  child: Container(margin:EdgeInsets.only(left: 65,top: 15),child: Text('SEARCH',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight.w500),)),
+                  decoration: BoxDecoration(color: AppColor.purple,borderRadius: BorderRadius.circular(30),),
+                )
               ],
             ),
           ],
