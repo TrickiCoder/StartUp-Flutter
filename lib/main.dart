@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:login/BusLoacation.dart';
+import 'package:login/BusLogin.dart';
 import 'package:login/Buybustickets.dart';
 import 'package:login/Donate.dart';
+import 'package:login/Profile.dart';
 import 'package:login/SearchFilters.dart';
 import 'package:login/component/NewLogin.dart';
 import 'package:login/goals.dart';
@@ -28,7 +30,7 @@ class _LoginScreenState extends State<HomePage> {
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
           routes:{
-        "/": (context) => BuyBusTickets()
+        "/": (context) => profile()
 
 ,},
 

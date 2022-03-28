@@ -245,20 +245,28 @@ class BuyBusTickets extends StatelessWidget {
                                         fontSize: 22,
                                         fontWeight: FontWeight.bold),
                                   ),
-
                                 ],
                               ),
-                            ),SizedBox(
+                            ),
+                            SizedBox(
                               height: 10,
                             ),
                             Container(
                               height: 35,
                               width: 120,
-                              child: Container(margin:EdgeInsets.only(left: 18,top: 7),child: Text('BUY TICKETS',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
+                              child: Container(
+                                  margin: EdgeInsets.only(left: 18, top: 7),
+                                  child: Text(
+                                    'BUY TICKETS',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white),
+                                  )),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(25),
                                   color: AppColor.purple),
-                            )],
+                            )
+                          ],
                         ),
                       ),
                     ],
@@ -289,7 +297,7 @@ class BuyBusTickets extends StatelessWidget {
                                 children: [
                                   Container(
                                       margin:
-                                      EdgeInsets.only(left: 15, top: 25),
+                                          EdgeInsets.only(left: 15, top: 25),
                                       child: Text('Location 1',
                                           style: TextStyle(
                                               fontSize: 17,
@@ -297,7 +305,7 @@ class BuyBusTickets extends StatelessWidget {
                                               fontWeight: FontWeight.bold))),
                                   Container(
                                       margin:
-                                      EdgeInsets.only(top: 0, right: 40),
+                                          EdgeInsets.only(top: 0, right: 40),
                                       child: Text('Date',
                                           style: TextStyle(
                                               fontSize: 11,
@@ -320,7 +328,7 @@ class BuyBusTickets extends StatelessWidget {
                                 children: [
                                   Container(
                                       margin:
-                                      EdgeInsets.only(left: 15, top: 25),
+                                          EdgeInsets.only(left: 15, top: 25),
                                       child: Text('Location 2',
                                           style: TextStyle(
                                               fontSize: 17,
@@ -328,7 +336,7 @@ class BuyBusTickets extends StatelessWidget {
                                               fontWeight: FontWeight.bold))),
                                   Container(
                                       margin:
-                                      EdgeInsets.only(top: 0, right: 40),
+                                          EdgeInsets.only(top: 0, right: 40),
                                       child: Text('Date',
                                           style: TextStyle(
                                               fontSize: 11,
@@ -411,30 +419,47 @@ class BuyBusTickets extends StatelessWidget {
                                         fontSize: 22,
                                         fontWeight: FontWeight.bold),
                                   ),
-
                                 ],
                               ),
-                            ),SizedBox(
+                            ),
+                            SizedBox(
                               height: 10,
                             ),
                             Container(
                               height: 35,
                               width: 120,
-                              child: Container(margin:EdgeInsets.only(left: 18,top: 7),child: Text('BUY TICKETS',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
+                              child: Container(
+                                  margin: EdgeInsets.only(left: 18, top: 7),
+                                  child: Text(
+                                    'BUY TICKETS',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white),
+                                  )),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(25),
                                   color: AppColor.purple),
-                            )],
+                            )
+                          ],
                         ),
                       ),
                     ],
                   ),
                 ),
-
               ],
             ),
-         Container(margin:EdgeInsets.only(top: 215,left: 70),child: Image.asset('assets/images/bus.png',height: 55,)),
-            Container(margin:EdgeInsets.only(top: 425,left: 70),child: Image.asset('assets/images/bus.png',height: 50,))
+            Container(
+                margin: EdgeInsets.only(top: 215, left: 70),
+                child: Image.asset(
+                  'assets/images/bus.png',
+                  height: 55,
+                )),
+            Container(
+                margin: EdgeInsets.only(top: 425, left: 70),
+                child: Image.asset(
+                  'assets/images/bus.png',
+                  height: 50,
+                ))
           ],
         ),
       ]),
